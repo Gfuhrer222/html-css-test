@@ -13,3 +13,30 @@ p {
     color: #666;
     font-size: 18px;
 }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* Bounce animation */
+    animation: bounce 2s infinite ease-in-out;
+}
+
+/* Smooth bounce keyframes */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+button:hover {
+    background-color: #0056b3;
+}
